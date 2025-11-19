@@ -52,7 +52,7 @@ export interface WinmxState extends WinmxData {
 
 export const useWinmxStore = create<WinmxState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       ...initialWinmxData,
       setTheme: (theme) => set({ theme }),
       toggleEqualizer: () => set((state) => ({ showEqualizer: !state.showEqualizer })),
