@@ -63,6 +63,7 @@ export function Desktop({
   // Define the default order for desktop shortcuts
   const defaultShortcutOrder: AppId[] = [
     "ipod",
+    "winmx",
     "chats",
     "applet-viewer",
     "internet-explorer",

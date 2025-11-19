@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --port $PORT",
     "build": "tsc -b && vite build",
+    "build:gh-pages": "BASE_URL=/ryos/ vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "generate:icons": "bun run scripts/generate-icon-manifest.ts",

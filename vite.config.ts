@@ -11,6 +11,7 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.BASE_URL || (process.env.GITHUB_ACTIONS ? "/ryos/" : "/"),
   server: {
     port: process.env.PORT ? Number(process.env.PORT) : 5173,
     cors: { origin: ["*"] },
